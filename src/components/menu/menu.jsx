@@ -3,30 +3,31 @@ import styles from "./menu.module.css";
 const Menu = ({ click }) => {
   console.log("To funcionando");
   return (
-    <div className={styles.clicaFora} onClick={click}>
+    <>
+      <div className={styles.fundoMenu} onClick={click}></div>
       <div className={styles.menu}>
-        <ul onClick={(e) => e.stopPropagation}>
+        <ul>
           <li>
-            <a href="">Bandoleiro 1</a>
+            <a href="">Terror</a>
           </li>
           <li>
-            <a href="">Bandoleiro 2</a>
+            <a href="">Comédia</a>
           </li>
           <li>
-            <a href="">Bandoleiro 3</a>
+            <a href="">Suspense</a>
           </li>
           <li>
-            <a href="">Bandoleiro 4</a>
+            <a href="">Romance</a>
           </li>
           <li>
-            <a href="">Bandoleiro 5</a>
+            <a href="">Drama</a>
           </li>
           <li>
-            <a href="">Bandoleiro 6</a>
+            <a href="">Ação</a>
           </li>
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
